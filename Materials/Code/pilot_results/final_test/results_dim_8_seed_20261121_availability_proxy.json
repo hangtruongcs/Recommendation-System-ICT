@@ -1,0 +1,697 @@
+{
+  "scope": "held-out test; first query per user; train frozen at 2021-07-01; protocol fixed after validation",
+  "interaction_cohort": "all",
+  "raw_events": 441077,
+  "cohort_events": 441077,
+  "split": {
+    "train_before": "2021-07-01",
+    "validation_before": "2021-10-01",
+    "train_events": 285227,
+    "validation_events": 75769,
+    "test_events": 80081,
+    "train_users": 36190,
+    "sites_in_training": 13,
+    "validation_users": {
+      "first_query_users": 14423,
+      "warm_users": 4851,
+      "cold_users": 9572,
+      "unknown_target_site": 0,
+      "warm_repeat_target": 3346,
+      "warm_new_target": 1505
+    },
+    "test_users": {
+      "first_query_users": 15801,
+      "warm_users": 3477,
+      "cold_users": 12324,
+      "unknown_target_site": 0,
+      "warm_repeat_target": 2251,
+      "warm_new_target": 1226
+    }
+  },
+  "seed": 20261121,
+  "latent_dimensions": 8,
+  "trainable_users": 36187,
+  "methods": {
+    "popularity": {
+      "ranking": {
+        "1": {
+          "hit_rate": 0.13373597929249353,
+          "ndcg": 0.13373597929249353
+        },
+        "3": {
+          "hit_rate": 0.30342249065286164,
+          "ndcg": 0.22976305343995485
+        },
+        "5": {
+          "hit_rate": 0.4906528616623526,
+          "ndcg": 0.3103987851931268
+        }
+      },
+      "estimated_top1_cost_cny": 24.996772111039377,
+      "estimated_top1_duration_min": 47.05724543338464,
+      "operational_ild_at_3": 0.17659271836987017,
+      "catalog_coverage_at_3": 0.23076923076923078
+    },
+    "popularity_distinct_users": {
+      "ranking": {
+        "1": {
+          "hit_rate": 0.18723037100949094,
+          "ndcg": 0.18723037100949094
+        },
+        "3": {
+          "hit_rate": 0.3459879206212252,
+          "ndcg": 0.27636203801409476
+        },
+        "5": {
+          "hit_rate": 0.542709232096635,
+          "ndcg": 0.35832504183592173
+        }
+      },
+      "estimated_top1_cost_cny": 26.00209863588668,
+      "estimated_top1_duration_min": 36.08069485699616,
+      "operational_ild_at_3": 0.37305654976064695,
+      "catalog_coverage_at_3": 0.23076923076923078
+    },
+    "personal_frequency": {
+      "ranking": {
+        "1": {
+          "hit_rate": 0.4357204486626402,
+          "ndcg": 0.4357204486626402
+        },
+        "3": {
+          "hit_rate": 0.6488352027610008,
+          "ndcg": 0.5588087897089071
+        },
+        "5": {
+          "hit_rate": 0.7517975266033937,
+          "ndcg": 0.601034794209726
+        }
+      },
+      "estimated_top1_cost_cny": 24.05137822188191,
+      "estimated_top1_duration_min": 44.798896759425574,
+      "operational_ild_at_3": 0.24039713902253002,
+      "catalog_coverage_at_3": 1.0
+    },
+    "bpr_mf": {
+      "ranking": {
+        "1": {
+          "hit_rate": 0.37158469945355194,
+          "ndcg": 0.37158469945355194
+        },
+        "3": {
+          "hit_rate": 0.6143226919758412,
+          "ndcg": 0.5133632230186166
+        },
+        "5": {
+          "hit_rate": 0.7374173137762439,
+          "ndcg": 0.5638564115971734
+        }
+      },
+      "estimated_top1_cost_cny": 24.37236133102569,
+      "estimated_top1_duration_min": 44.62726873176947,
+      "operational_ild_at_3": 0.30659228124217686,
+      "catalog_coverage_at_3": 1.0
+    },
+    "weighted_sum": {
+      "ranking": {
+        "1": {
+          "hit_rate": 0.3183779119930975,
+          "ndcg": 0.3183779119930975
+        },
+        "3": {
+          "hit_rate": 0.5289042277825712,
+          "ndcg": 0.4406992172470148
+        },
+        "5": {
+          "hit_rate": 0.6637906241012367,
+          "ndcg": 0.49613220381860623
+        }
+      },
+      "estimated_top1_cost_cny": 22.85495120774591,
+      "estimated_top1_duration_min": 41.95874444403281,
+      "operational_ild_at_3": 0.32928185250257347,
+      "catalog_coverage_at_3": 1.0
+    },
+    "pareto_front_relevance": {
+      "ranking": {
+        "1": {
+          "hit_rate": 0.37158469945355194,
+          "ndcg": 0.37158469945355194
+        },
+        "3": {
+          "hit_rate": 0.5829738280126546,
+          "ndcg": 0.4954294337709067
+        },
+        "5": {
+          "hit_rate": 0.6686798964624676,
+          "ndcg": 0.5308663723552396
+        }
+      },
+      "estimated_top1_cost_cny": 24.37236133102569,
+      "estimated_top1_duration_min": 44.62726873176947,
+      "operational_ild_at_3": 0.3197790436050667,
+      "catalog_coverage_at_3": 1.0
+    },
+    "diversity_greedy_alpha_0.5": {
+      "ranking": {
+        "1": {
+          "hit_rate": 0.37158469945355194,
+          "ndcg": 0.37158469945355194
+        },
+        "3": {
+          "hit_rate": 0.5757837215990796,
+          "ndcg": 0.4847550611302872
+        },
+        "5": {
+          "hit_rate": 0.7086568881219442,
+          "ndcg": 0.5395100552819964
+        }
+      },
+      "estimated_top1_cost_cny": 24.37236133102569,
+      "estimated_top1_duration_min": 44.62726873176947,
+      "operational_ild_at_3": 0.4657548138753166,
+      "catalog_coverage_at_3": 1.0
+    },
+    "diversity_greedy_alpha_0.8": {
+      "ranking": {
+        "1": {
+          "hit_rate": 0.37158469945355194,
+          "ndcg": 0.37158469945355194
+        },
+        "3": {
+          "hit_rate": 0.6074201898188093,
+          "ndcg": 0.5069371515397139
+        },
+        "5": {
+          "hit_rate": 0.7213114754098361,
+          "ndcg": 0.553743964696961
+        }
+      },
+      "estimated_top1_cost_cny": 24.37236133102569,
+      "estimated_top1_duration_min": 44.62726873176947,
+      "operational_ild_at_3": 0.3751477652900658,
+      "catalog_coverage_at_3": 1.0
+    }
+  },
+  "availability_policy": {
+    "duration": "positive energy and duration, end strictly before cutoff",
+    "payment_and_gross": "duration rule and payment timestamp strictly before cutoff; proxy not verified"
+  },
+  "cold_user_popularity_fallback": {
+    "users": 12324,
+    "ranking": {
+      "1": {
+        "hit_rate": 0.07667964946445958,
+        "ndcg": 0.07667964946445958
+      },
+      "3": {
+        "hit_rate": 0.19685167153521585,
+        "ndcg": 0.14425555633462167
+      },
+      "5": {
+        "hit_rate": 0.5290490100616683,
+        "ndcg": 0.287325162692336
+      }
+    }
+  },
+  "warm_history_group_sizes": {
+    "one_train_visit": 725,
+    "two_to_four_train_visits": 935,
+    "five_or_more_train_visits": 1817
+  },
+  "warm_history_group_metrics": {
+    "one_train_visit": {
+      "users": 725,
+      "popularity": {
+        "hit_rate_at_3": 0.20689655172413793,
+        "ndcg_at_3": 0.15462932467487842
+      },
+      "popularity_distinct_users": {
+        "hit_rate_at_3": 0.44275862068965516,
+        "ndcg_at_3": 0.39456389291133137
+      },
+      "personal_frequency": {
+        "hit_rate_at_3": 0.5296551724137931,
+        "ndcg_at_3": 0.47385722438423844
+      },
+      "bpr_mf": {
+        "hit_rate_at_3": 0.5310344827586206,
+        "ndcg_at_3": 0.47599162166502695
+      },
+      "weighted_sum": {
+        "hit_rate_at_3": 0.44413793103448274,
+        "ndcg_at_3": 0.4164522656650258
+      },
+      "pareto_front_relevance": {
+        "hit_rate_at_3": 0.5296551724137931,
+        "ndcg_at_3": 0.4749407809655195
+      },
+      "diversity_greedy_alpha_0.5": {
+        "hit_rate_at_3": 0.5282758620689655,
+        "ndcg_at_3": 0.46865275012315377
+      },
+      "diversity_greedy_alpha_0.8": {
+        "hit_rate_at_3": 0.5296551724137931,
+        "ndcg_at_3": 0.4704259618768486
+      }
+    },
+    "two_to_four_train_visits": {
+      "users": 935,
+      "popularity": {
+        "hit_rate_at_3": 0.2374331550802139,
+        "ndcg_at_3": 0.18087448633308065
+      },
+      "popularity_distinct_users": {
+        "hit_rate_at_3": 0.39358288770053473,
+        "ndcg_at_3": 0.3382084015622631
+      },
+      "personal_frequency": {
+        "hit_rate_at_3": 0.6053475935828877,
+        "ndcg_at_3": 0.5359922439228446
+      },
+      "bpr_mf": {
+        "hit_rate_at_3": 0.6053475935828877,
+        "ndcg_at_3": 0.529332611665397
+      },
+      "weighted_sum": {
+        "hit_rate_at_3": 0.5379679144385027,
+        "ndcg_at_3": 0.46775918167303604
+      },
+      "pareto_front_relevance": {
+        "hit_rate_at_3": 0.5903743315508021,
+        "ndcg_at_3": 0.5208657578953433
+      },
+      "diversity_greedy_alpha_0.5": {
+        "hit_rate_at_3": 0.5689839572192513,
+        "ndcg_at_3": 0.5026088523414837
+      },
+      "diversity_greedy_alpha_0.8": {
+        "hit_rate_at_3": 0.5925133689839572,
+        "ndcg_at_3": 0.5206749902139068
+      }
+    },
+    "five_or_more_train_visits": {
+      "users": 1817,
+      "popularity": {
+        "hit_rate_at_3": 0.375894331315355,
+        "ndcg_at_3": 0.2848994120528375
+      },
+      "popularity_distinct_users": {
+        "hit_rate_at_3": 0.282883874518437,
+        "ndcg_at_3": 0.197373213183036
+      },
+      "personal_frequency": {
+        "hit_rate_at_3": 0.7187671986791414,
+        "ndcg_at_3": 0.6044462994339225
+      },
+      "bpr_mf": {
+        "hit_rate_at_3": 0.6521739130434783,
+        "ndcg_at_3": 0.5200572420591301
+      },
+      "weighted_sum": {
+        "hit_rate_at_3": 0.558062740781508,
+        "ndcg_at_3": 0.43644934006408254
+      },
+      "pareto_front_relevance": {
+        "hit_rate_at_3": 0.600440286186021,
+        "ndcg_at_3": 0.49051546031331594
+      },
+      "diversity_greedy_alpha_0.5": {
+        "hit_rate_at_3": 0.5982388552559164,
+        "ndcg_at_3": 0.48199275001179687
+      },
+      "diversity_greedy_alpha_0.8": {
+        "hit_rate_at_3": 0.6461199779856907,
+        "ndcg_at_3": 0.5144361792475878
+      }
+    }
+  },
+  "paired_ndcg3_differences": {
+    "bpr_mf_minus_personal_frequency": {
+      "mean": -0.04544556669029044,
+      "bootstrap_95_percentile_ci": [
+        -0.056213876509099855,
+        -0.03464288919421907
+      ]
+    },
+    "weighted_sum_minus_bpr_mf": {
+      "mean": -0.07266400577160188,
+      "bootstrap_95_percentile_ci": [
+        -0.08198056907419754,
+        -0.06260433739759311
+      ]
+    },
+    "pareto_front_relevance_minus_bpr_mf": {
+      "mean": -0.017933789247709938,
+      "bootstrap_95_percentile_ci": [
+        -0.02307983160051821,
+        -0.01238452112070693
+      ]
+    },
+    "diversity_greedy_alpha_0.5_minus_bpr_mf": {
+      "mean": -0.02860816188832944,
+      "bootstrap_95_percentile_ci": [
+        -0.034320755813151894,
+        -0.022698897741846025
+      ]
+    },
+    "diversity_greedy_alpha_0.8_minus_bpr_mf": {
+      "mean": -0.0064260714789028325,
+      "bootstrap_95_percentile_ci": [
+        -0.009909950932429044,
+        -0.0029828770270712876
+      ]
+    }
+  },
+  "paired_ild3_differences": {
+    "weighted_sum_minus_bpr_mf": {
+      "mean": 0.02268957126039664,
+      "bootstrap_95_percentile_ci": [
+        0.01633275685678326,
+        0.02894491673430683
+      ]
+    },
+    "pareto_front_relevance_minus_bpr_mf": {
+      "mean": 0.013186762362889886,
+      "bootstrap_95_percentile_ci": [
+        0.00982997412773123,
+        0.016663576335198313
+      ]
+    },
+    "diversity_greedy_alpha_0.5_minus_bpr_mf": {
+      "mean": 0.15916253263313979,
+      "bootstrap_95_percentile_ci": [
+        0.15398197316782963,
+        0.1644764092762553
+      ]
+    },
+    "diversity_greedy_alpha_0.8_minus_bpr_mf": {
+      "mean": 0.068555484047889,
+      "bootstrap_95_percentile_ci": [
+        0.06453643748371105,
+        0.07264121547612316
+      ]
+    }
+  },
+  "weight_sensitivity": {
+    "balanced": {
+      "weights": [
+        0.5,
+        0.25,
+        0.25
+      ],
+      "ranking": {
+        "1": {
+          "hit_rate": 0.3183779119930975,
+          "ndcg": 0.3183779119930975
+        },
+        "3": {
+          "hit_rate": 0.5289042277825712,
+          "ndcg": 0.4406992172470148
+        },
+        "5": {
+          "hit_rate": 0.6637906241012367,
+          "ndcg": 0.49613220381860623
+        }
+      },
+      "estimated_top1_cost_cny": 22.85495120774591,
+      "estimated_top1_duration_min": 41.95874444403281
+    },
+    "cost_focused": {
+      "weights": [
+        0.3,
+        0.5,
+        0.2
+      ],
+      "ranking": {
+        "1": {
+          "hit_rate": 0.08771929824561403,
+          "ndcg": 0.08771929824561403
+        },
+        "3": {
+          "hit_rate": 0.17601380500431407,
+          "ndcg": 0.13755260074469086
+        },
+        "5": {
+          "hit_rate": 0.274086856485476,
+          "ndcg": 0.17725698164328674
+        }
+      },
+      "estimated_top1_cost_cny": 19.57445190056941,
+      "estimated_top1_duration_min": 43.640731842410965
+    },
+    "duration_focused": {
+      "weights": [
+        0.3,
+        0.2,
+        0.5
+      ],
+      "ranking": {
+        "1": {
+          "hit_rate": 0.2473396606269773,
+          "ndcg": 0.2473396606269773
+        },
+        "3": {
+          "hit_rate": 0.4176013805004314,
+          "ndcg": 0.34286356398784085
+        },
+        "5": {
+          "hit_rate": 0.545872878918608,
+          "ndcg": 0.39480487033841716
+        }
+      },
+      "estimated_top1_cost_cny": 22.417151760974285,
+      "estimated_top1_duration_min": 39.734056181033154
+    },
+    "relevance_focused": {
+      "weights": [
+        0.8,
+        0.1,
+        0.1
+      ],
+      "ranking": {
+        "1": {
+          "hit_rate": 0.37359792924935287,
+          "ndcg": 0.37359792924935287
+        },
+        "3": {
+          "hit_rate": 0.6056945642795514,
+          "ndcg": 0.5086248477998316
+        },
+        "5": {
+          "hit_rate": 0.7169974115616912,
+          "ndcg": 0.5542538617690274
+        }
+      },
+      "estimated_top1_cost_cny": 24.06045521365125,
+      "estimated_top1_duration_min": 43.859041048604304
+    }
+  },
+  "diversity_metric_gross_sensitivity": {
+    "popularity": 0.17643444342822426,
+    "popularity_distinct_users": 0.37965595776486555,
+    "personal_frequency": 0.24555007737489262,
+    "bpr_mf": 0.31004793862663477,
+    "weighted_sum": 0.330448083261116,
+    "pareto_front_relevance": 0.3245479607805578,
+    "diversity_greedy_alpha_0.5": 0.4723076525904221,
+    "diversity_greedy_alpha_0.8": 0.3807268611183154
+  },
+  "exposure_at_3": {
+    "popularity": {
+      "top_site_share": 0.3333333333333333,
+      "top_3_sites_share": 1.0,
+      "site_shares": {
+        "Nanhu | Financial Industrial Park": 0.0,
+        "Nanhu | Technology Park": 0.0,
+        "Nanhu | Tourist Attraction": 0.0,
+        "Tongxiang | Bus Station": 0.3333333333333333,
+        "Tongxiang | Industrial Park": 0.0,
+        "Tongxiang | Park A": 0.0,
+        "Tongxiang | Park B": 0.3333333333333333,
+        "Tongxiang | Shopping Mall": 0.3333333333333333,
+        "Xiuzhou | Expressway Service District A": 0.0,
+        "Xiuzhou | Expressway Service District B": 0.0,
+        "Xiuzhou | Expressway Service District C": 0.0,
+        "Xiuzhou | Government Agency": 0.0,
+        "Xiuzhou | Wholesale Market": 0.0
+      }
+    },
+    "popularity_distinct_users": {
+      "top_site_share": 0.3333333333333333,
+      "top_3_sites_share": 1.0,
+      "site_shares": {
+        "Nanhu | Financial Industrial Park": 0.0,
+        "Nanhu | Technology Park": 0.0,
+        "Nanhu | Tourist Attraction": 0.0,
+        "Tongxiang | Bus Station": 0.0,
+        "Tongxiang | Industrial Park": 0.0,
+        "Tongxiang | Park A": 0.3333333333333333,
+        "Tongxiang | Park B": 0.0,
+        "Tongxiang | Shopping Mall": 0.3333333333333333,
+        "Xiuzhou | Expressway Service District A": 0.0,
+        "Xiuzhou | Expressway Service District B": 0.0,
+        "Xiuzhou | Expressway Service District C": 0.3333333333333333,
+        "Xiuzhou | Government Agency": 0.0,
+        "Xiuzhou | Wholesale Market": 0.0
+      }
+    },
+    "personal_frequency": {
+      "top_site_share": 0.2727447032882753,
+      "top_3_sites_share": 0.5937110535902599,
+      "site_shares": {
+        "Nanhu | Financial Industrial Park": 0.025980251174384048,
+        "Nanhu | Technology Park": 0.05589109385485572,
+        "Nanhu | Tourist Attraction": 0.025500910746812388,
+        "Tongxiang | Bus Station": 0.2727447032882753,
+        "Tongxiang | Industrial Park": 0.02521330649026939,
+        "Tongxiang | Park A": 0.0489885916978238,
+        "Tongxiang | Park B": 0.21694947751893395,
+        "Tongxiang | Shopping Mall": 0.10401687278305052,
+        "Xiuzhou | Expressway Service District A": 0.029335634167385678,
+        "Xiuzhou | Expressway Service District B": 0.03211580864730131,
+        "Xiuzhou | Expressway Service District C": 0.08848624292972869,
+        "Xiuzhou | Government Agency": 0.04208608954079187,
+        "Xiuzhou | Wholesale Market": 0.03269101716038731
+      }
+    },
+    "bpr_mf": {
+      "top_site_share": 0.10507142172370817,
+      "top_3_sites_share": 0.3062026651327773,
+      "site_shares": {
+        "Nanhu | Financial Industrial Park": 0.03844310229124724,
+        "Nanhu | Technology Park": 0.08848624292972869,
+        "Nanhu | Tourist Attraction": 0.04755057041510881,
+        "Tongxiang | Bus Station": 0.10507142172370817,
+        "Tongxiang | Industrial Park": 0.06145144281468699,
+        "Tongxiang | Park A": 0.08196721311475409,
+        "Tongxiang | Park B": 0.07774901735212347,
+        "Tongxiang | Shopping Mall": 0.1033457961844502,
+        "Xiuzhou | Expressway Service District A": 0.0879110344166427,
+        "Xiuzhou | Expressway Service District B": 0.06614897900488927,
+        "Xiuzhou | Expressway Service District C": 0.09778544722461892,
+        "Xiuzhou | Government Agency": 0.07698207266800881,
+        "Xiuzhou | Wholesale Market": 0.0671076598600326
+      }
+    },
+    "weighted_sum": {
+      "top_site_share": 0.21167673281564567,
+      "top_3_sites_share": 0.5523919087335826,
+      "site_shares": {
+        "Nanhu | Financial Industrial Park": 0.07688620458249448,
+        "Nanhu | Technology Park": 0.19470808167960885,
+        "Nanhu | Tourist Attraction": 0.14600709423832806,
+        "Tongxiang | Bus Station": 0.051864634263253766,
+        "Tongxiang | Industrial Park": 0.01303805962994919,
+        "Tongxiang | Park A": 0.04103154060013422,
+        "Tongxiang | Park B": 0.030198446937014668,
+        "Tongxiang | Shopping Mall": 0.017831463905665805,
+        "Xiuzhou | Expressway Service District A": 0.03259514907487297,
+        "Xiuzhou | Expressway Service District B": 0.03575879589684594,
+        "Xiuzhou | Expressway Service District C": 0.09423832806058863,
+        "Xiuzhou | Government Agency": 0.21167673281564567,
+        "Xiuzhou | Wholesale Market": 0.05416546831559774
+      }
+    },
+    "pareto_front_relevance": {
+      "top_site_share": 0.12338222605694564,
+      "top_3_sites_share": 0.3281564567155594,
+      "site_shares": {
+        "Nanhu | Financial Industrial Park": 0.03786789377816125,
+        "Nanhu | Technology Park": 0.12338222605694564,
+        "Nanhu | Tourist Attraction": 0.08311763014092609,
+        "Tongxiang | Bus Station": 0.092033362093759,
+        "Tongxiang | Industrial Park": 0.04285303422490653,
+        "Tongxiang | Park A": 0.059438213018886014,
+        "Tongxiang | Park B": 0.05291918320391142,
+        "Tongxiang | Shopping Mall": 0.053686127888026076,
+        "Xiuzhou | Expressway Service District A": 0.1019077749017352,
+        "Xiuzhou | Expressway Service District B": 0.07765314926660914,
+        "Xiuzhou | Expressway Service District C": 0.10286645575687854,
+        "Xiuzhou | Government Agency": 0.09548461317227495,
+        "Xiuzhou | Wholesale Market": 0.07679033649698015
+      }
+    },
+    "diversity_greedy_alpha_0.5": {
+      "top_site_share": 0.14504841338318475,
+      "top_3_sites_share": 0.38864921867510305,
+      "site_shares": {
+        "Nanhu | Financial Industrial Park": 0.04237369379733487,
+        "Nanhu | Technology Park": 0.08024158757549611,
+        "Nanhu | Tourist Attraction": 0.0421819576263062,
+        "Tongxiang | Bus Station": 0.0727638769053782,
+        "Tongxiang | Industrial Park": 0.024254625635126068,
+        "Tongxiang | Park A": 0.05589109385485572,
+        "Tongxiang | Park B": 0.0516728980922251,
+        "Tongxiang | Shopping Mall": 0.14504841338318475,
+        "Xiuzhou | Expressway Service District A": 0.0816796088582111,
+        "Xiuzhou | Expressway Service District B": 0.05301505128942575,
+        "Xiuzhou | Expressway Service District C": 0.10727638769053782,
+        "Xiuzhou | Government Agency": 0.11983510689291535,
+        "Xiuzhou | Wholesale Market": 0.12376569839900298
+      }
+    },
+    "diversity_greedy_alpha_0.8": {
+      "top_site_share": 0.11149458345316844,
+      "top_3_sites_share": 0.3132969034608379,
+      "site_shares": {
+        "Nanhu | Financial Industrial Park": 0.04409931933659285,
+        "Nanhu | Technology Park": 0.08848624292972869,
+        "Nanhu | Tourist Attraction": 0.04707122998753715,
+        "Tongxiang | Bus Station": 0.0947176684881603,
+        "Tongxiang | Industrial Park": 0.053686127888026076,
+        "Tongxiang | Park A": 0.0695043619978909,
+        "Tongxiang | Park B": 0.06662831943246093,
+        "Tongxiang | Shopping Mall": 0.11149458345316844,
+        "Xiuzhou | Expressway Service District A": 0.07870769820726681,
+        "Xiuzhou | Expressway Service District B": 0.05589109385485572,
+        "Xiuzhou | Expressway Service District C": 0.09903173233630524,
+        "Xiuzhou | Government Agency": 0.0879110344166427,
+        "Xiuzhou | Wholesale Market": 0.1027705876713642
+      }
+    }
+  },
+  "gross_cost_sensitivity": {
+    "ranking": {
+      "1": {
+        "hit_rate": 0.3203911417888985,
+        "ndcg": 0.3203911417888985
+      },
+      "3": {
+        "hit_rate": 0.5286166235260282,
+        "ndcg": 0.4413737502444674
+      },
+      "5": {
+        "hit_rate": 0.6660914581535806,
+        "ndcg": 0.4979467243122735
+      }
+    },
+    "estimated_top1_gross_cny": 23.131362868050616,
+    "estimated_top1_duration_min": 42.01715333014708,
+    "top1_changed_fraction_vs_actual_payment": 0.049755536381938456
+  },
+  "estimator_test": {
+    "positive_energy_duration_train": 251570,
+    "duration_train_available": 251543,
+    "payment_train_proxy_available": 251358,
+    "train_site_samples_min": 5489,
+    "duration_site_samples_min": 5498,
+    "actual_payment_mae_cny": 2.9124322758779586,
+    "duration_mae_min": 28.067699960774156,
+    "actual_payment_median_absolute_error_cny": 1.1298644986449844,
+    "duration_median_absolute_error_min": 9.204519024989752,
+    "predicted_20kwh_cost_range_cny": [
+      19.20403587443946,
+      26.002098635886675
+    ],
+    "predicted_20kwh_duration_range_min": [
+      35.380116959064324,
+      60.18829858776059
+    ],
+    "global_actual_payment_mae_cny": 3.9253272704268527,
+    "global_duration_mae_min": 28.398518460927654,
+    "site_gross_amount_mae_cny": 2.6396349351867006,
+    "global_gross_amount_mae_cny": 3.549550040323524,
+    "positive_energy_duration_test": 71512
+  }
+}

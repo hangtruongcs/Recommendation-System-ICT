@@ -1,0 +1,44 @@
+{
+  "scope": "post hoc exploratory validation; seed 20261120; same warm users",
+  "users": 4851,
+  "personal_frequency": {
+    "ndcg3": 0.6147405154651504,
+    "hit3": 0.6922284065141208
+  },
+  "most_recent_site": {
+    "ndcg3": 0.5686612840496824,
+    "hit3": 0.6198721913007628
+  },
+  "bpr_mf": {
+    "ndcg3": 0.5645955296426406,
+    "hit3": 0.6619253762110905
+  },
+  "candidate_subset": {
+    "5": {
+      "pareto_ndcg3": 0.7302115311357057,
+      "top3_set_overlap_vs_bpr": 0.8666254380540095
+    },
+    "8": {
+      "pareto_ndcg3": 0.6359724673513605,
+      "top3_set_overlap_vs_bpr": 0.8309626881055453
+    },
+    "13": {
+      "pareto_ndcg3": 0.5495326134000392,
+      "top3_set_overlap_vs_bpr": 0.8259465402322544
+    }
+  },
+  "duration_shrinkage": {
+    "0": {
+      "pareto_ndcg3": 0.5495326134000392,
+      "top3_changed_vs_original": 0.0
+    },
+    "0.5": {
+      "pareto_ndcg3": 0.5495326134000392,
+      "top3_changed_vs_original": 0.0
+    },
+    "1": {
+      "pareto_ndcg3": 0.5309850190306894,
+      "top3_changed_vs_original": 0.5963718820861678
+    }
+  }
+}

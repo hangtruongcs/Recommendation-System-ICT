@@ -1,0 +1,10 @@
+{
+  "cutoff": "2021-07-01T00:00:00",
+  "train_events": 285227,
+  "train_ending_at_or_after_cutoff": 28,
+  "operational_train_events": 251570,
+  "operational_ending_at_or_after_cutoff": 27,
+  "operational_payment_at_or_after_cutoff": 212,
+  "operational_end_or_payment_at_or_after_cutoff": 212,
+  "caveat": "Payment timestamp is a proxy, not verified feature availability."
+}

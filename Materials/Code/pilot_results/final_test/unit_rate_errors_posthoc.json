@@ -1,0 +1,7 @@
+{
+  "test_sessions": 71512,
+  "site_cost_rate_mae_cny_per_kwh": 0.16307565997488233,
+  "global_cost_rate_mae_cny_per_kwh": 0.21326822917450952,
+  "site_duration_rate_mae_minutes_per_kwh": 3.490353857520194,
+  "global_duration_rate_mae_minutes_per_kwh": 3.50512347061398
+}

@@ -1,0 +1,163 @@
+{
+  "scope": "validation exploratory first warm user, seed 20261120; anonymized query",
+  "sites": [
+    {
+      "site": "Nanhu | Financial Industrial Park",
+      "relevance": -0.7709490025826107,
+      "cost_cny": 20.333787465940055,
+      "duration_min": 46.16060427078979,
+      "front": 2,
+      "pareto_rank": 9,
+      "bpr_rank": 9,
+      "dominates": [
+        "Tongxiang | Bus Station",
+        "Tongxiang | Park A",
+        "Tongxiang | Shopping Mall"
+      ]
+    },
+    {
+      "site": "Nanhu | Technology Park",
+      "relevance": -0.4726706335156321,
+      "cost_cny": 20.33029612756264,
+      "duration_min": 43.06249040022921,
+      "front": 1,
+      "pareto_rank": 5,
+      "bpr_rank": 5,
+      "dominates": [
+        "Nanhu | Financial Industrial Park",
+        "Tongxiang | Bus Station",
+        "Tongxiang | Industrial Park",
+        "Tongxiang | Park A",
+        "Tongxiang | Park B",
+        "Tongxiang | Shopping Mall"
+      ]
+    },
+    {
+      "site": "Nanhu | Tourist Attraction",
+      "relevance": -0.7535626949452214,
+      "cost_cny": 20.87011749761829,
+      "duration_min": 39.937106918239,
+      "front": 1,
+      "pareto_rank": 6,
+      "bpr_rank": 8,
+      "dominates": [
+        "Tongxiang | Bus Station",
+        "Tongxiang | Park A",
+        "Tongxiang | Shopping Mall"
+      ]
+    },
+    {
+      "site": "Tongxiang | Bus Station",
+      "relevance": -1.0186934043483584,
+      "cost_cny": 24.99677211103938,
+      "duration_min": 47.05724543338462,
+      "front": 3,
+      "pareto_rank": 12,
+      "bpr_rank": 11,
+      "dominates": [
+        "Tongxiang | Park A"
+      ]
+    },
+    {
+      "site": "Tongxiang | Industrial Park",
+      "relevance": -0.7020809180755208,
+      "cost_cny": 25.004516711833787,
+      "duration_min": 47.53408761241659,
+      "front": 2,
+      "pareto_rank": 8,
+      "bpr_rank": 7,
+      "dominates": []
+    },
+    {
+      "site": "Tongxiang | Park A",
+      "relevance": -2.671018378180902,
+      "cost_cny": 25.00361011583128,
+      "duration_min": 49.6911093204405,
+      "front": 4,
+      "pareto_rank": 13,
+      "bpr_rank": 13,
+      "dominates": []
+    },
+    {
+      "site": "Tongxiang | Park B",
+      "relevance": -0.5048872307429533,
+      "cost_cny": 25.0,
+      "duration_min": 49.043120155038764,
+      "front": 2,
+      "pareto_rank": 7,
+      "bpr_rank": 6,
+      "dominates": [
+        "Tongxiang | Park A",
+        "Tongxiang | Shopping Mall"
+      ]
+    },
+    {
+      "site": "Tongxiang | Shopping Mall",
+      "relevance": -0.9584013279266426,
+      "cost_cny": 25.0,
+      "duration_min": 60.18829858776059,
+      "front": 3,
+      "pareto_rank": 11,
+      "bpr_rank": 10,
+      "dominates": []
+    },
+    {
+      "site": "Xiuzhou | Expressway Service District A",
+      "relevance": -0.39349596505010853,
+      "cost_cny": 26.001742160278745,
+      "duration_min": 35.380116959064324,
+      "front": 1,
+      "pareto_rank": 4,
+      "bpr_rank": 4,
+      "dominates": []
+    },
+    {
+      "site": "Xiuzhou | Expressway Service District B",
+      "relevance": 0.096319927990338,
+      "cost_cny": 26.001478196600146,
+      "duration_min": 36.42386557110075,
+      "front": 1,
+      "pareto_rank": 2,
+      "bpr_rank": 2,
+      "dominates": []
+    },
+    {
+      "site": "Xiuzhou | Expressway Service District C",
+      "relevance": 3.6883100819590253,
+      "cost_cny": 26.002098635886675,
+      "duration_min": 36.08069485699616,
+      "front": 1,
+      "pareto_rank": 1,
+      "bpr_rank": 1,
+      "dominates": []
+    },
+    {
+      "site": "Xiuzhou | Government Agency",
+      "relevance": -0.3902170541424391,
+      "cost_cny": 19.20403587443946,
+      "duration_min": 43.97695967943902,
+      "front": 1,
+      "pareto_rank": 3,
+      "bpr_rank": 3,
+      "dominates": [
+        "Nanhu | Financial Industrial Park",
+        "Tongxiang | Bus Station",
+        "Tongxiang | Industrial Park",
+        "Tongxiang | Park A",
+        "Tongxiang | Park B",
+        "Tongxiang | Shopping Mall",
+        "Xiuzhou | Wholesale Market"
+      ]
+    },
+    {
+      "site": "Xiuzhou | Wholesale Market",
+      "relevance": -1.5286479833532916,
+      "cost_cny": 20.330188679245282,
+      "duration_min": 52.726598302156106,
+      "front": 2,
+      "pareto_rank": 10,
+      "bpr_rank": 12,
+      "dominates": []
+    }
+  ]
+}
